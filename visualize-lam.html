@@ -1,0 +1,145 @@
+<!DOCTYPE HTML>
+<!--
+	Verti by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Local Atomic Motifs | Visualize LAMs</title>
+		<meta charset="utf-8" />
+        <link rel="shortcut icon" href="favicon.png">
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+	</head>
+	<body class="left-sidebar">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<div id="header-wrapper">
+					<header id="header" class="container">
+
+						<!-- Logo -->
+							<div id="logo">
+								<h1><a href="index.html"><img src="images/LAM logo.png" alt="" height="60" /></a></h1>
+								<span>Local Atomic Motifs</span>
+							</div>
+
+						<!-- Nav -->
+							<nav id="nav">
+								<ul>
+								  <li><a href="index.html">Home</a></li>
+								 
+									<li><a href="lam-about.html">About LAMs</a></li>
+									<li class="current"><a href="visualize-lam.html">Visualize LAMs</a></li>
+                                    <li>
+										<a href="#">Examples</a>
+										<ul>
+											<li><a href="ex-si.html">Silicon</a></li>
+											<li><a href="ex-ge.html">Germanium</a></li>
+											<li>
+												<a href="ex-sio.html">Silica</a>
+											</li>
+										</ul>
+									</li>
+									<li><a href="contact.html">About Us</a></li>
+								</ul>
+							</nav>
+
+					</header>
+				</div>
+
+			<!-- Main -->
+				<div id="main-wrapper">
+					<div class="container">
+						<div class="row 200%">
+							<div class="4u 12u$(medium)">
+								<div id="sidebar">
+
+									<!-- Sidebar -->
+								  <section>
+										  <h3>Need more Details</h3>
+										  <p>Feel free to contact us if you have any questions. Or check out our first publication detailing some of the math and orientations that goes into creating a LAM.</p>
+										  <footer>
+												<a href="http://journals.aps.org/prb/abstract/10.1103/PhysRevB.92.064204" class="button icon fa-info-circle">Find out more</a>
+									</footer>
+										</section>
+
+										<section>
+										  <h3>Useful Links</h3>
+										  <ul class="style2">
+										    <li><a href="http://journals.aps.org/prb/abstract/10.1103/PhysRevB.92.064204">First publication on LAMs</a></li>
+										    <li><a href="http://news.chess.cornell.edu/articles/2015/Fontes151210b.html">LAMs being used with CHESS</a></li>
+										    <li><a href="http://meetings.aps.org/Meeting/MAR16/Session/Y16.4">Upcoming talk at APS March Meeting 2016</a></li>
+										    <li><a href="https://www.python.org/download/releases/2.7/">Python 2.7</a></li>
+										    <li><a href="http://mayavi.sourceforge.net/">MayaVi</a></li>
+										    <li><a href="http://www.szfki.hu/~nphys/rmc++/opening.html">RMC++</a></li>
+											</ul>
+										</section>
+
+								</div>
+							</div>
+							<div class="8u 12u$(medium) important(medium)">
+								<div id="content">
+
+									<!-- Content -->
+										<article>
+										  <h2>Visualizing LAMs</h2>
+										  <p>The result of the LAM method is a statistically averaged density. This is best plotted as a 3D contour plot. The software package Mayavi was used to facilitate this. Due to the binning procedure, smooth contours were created by further applying a Gaussian filter. Stereograms were then produced by placing 2 different snapshots side-by-side with an azimuthal rotation of 5 degrees applied between the 2 images. The LAM could then be viewed using the full set of atoms defining a cluster, or with filters being applied such as the fixed distance and tree filter. A radial filter was also commonly applied to view a 3D LAM with different coordination numbers as there is an expectation of the structure being different as a result. It is difficult to make quantitative conclusions using a 3D LAM as a consequence of viewing them through 2D media. However, many structural descriptions that are impossible to see with traditional analysis are now exceptionally clear. Once these structural features are visually identified, it is possible to computationally obtain quantitative evidence </p>
+										  <h3>Cross-eye stereogram</h3>
+										  <p>In print, animations are naturally useless for sharing figures. The best way to get around this is to have to snapshots taken at different perspectives that match the spacing of the human eye. These images can be displayed on 3D capable screens using various software but on paper, the cross-eye technique can be used. Two images are displayed side-by-side and the goal is to have the right eye focus on the left image and left eye focus on the right image. You do this by crossing your eyes and have the images overlap until it becomes in focus and in 3D. <a href="http://www.neilcreek.com/2008/02/28/how-to-see-3d-photos/">This</a> site has a really good explanation with animations and examples to help you out. The end result of this technique is being able to get a good view of a crystalline LAM shown below where viewing in 2D is dififcult to gauge depth.</p>
+										  <img class="image featured" src="images/ge_crystal.png" alt="", align="middle"/>
+										  <h3>2D Pole Figures</h3>
+										  <p>2D Pole figures are fairly self-explanatory but are not typically applied to atomic visualizations. It is a 2D projection of spatial data in polar coordinates. For a given radial slice of some predetermined thickness the polar angle is projected radially and the azimuthal angle is projected as a rotation. This preserves all the angular information and presents it in such a way that quantifiable spatial data is both preserved and easily presented. </p>
+                                          <img class="image fit" src="images/age-4pole.png" alt="", align="middle"/>
+										</article>
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			<!-- Footer -->
+				<div id="footer-wrapper">
+					<footer id="footer" class="container">
+					  <div class="row">
+					    <div class="5u 6u$(medium) 12u$(small)">
+					      <!-- Contact -->
+					      <section class="widget contact last">
+					        <h3>Contact Us</h3>
+					        <p>Al Rahemtulla: <a href="mailto:arahemtu@uoguelph.ca">arahemtu@uoguelph.ca</a><br>
+					          Dr. Stefan Kycia: <a href="mailto:skycia@uoguelph.ca">skycia@uoguelph.ca</a><br>
+				            Dr. Bruno Tomberli: <a href="mailto:brunotomberli@capilanou.ca">brunotomberli@capilanou.ca</a></p>
+				          </section>
+				        </div>
+</div>
+						<div class="row">
+							<div class="12u">
+								<div id="copyright">
+									<ul class="menu">
+									  <li>&copy; 2016. All rights reserved</li>
+									  <li>Webmaster: Al Rahemtulla</li><li> Design: <a href="http://html5up.net">HTML5 UP</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</footer>
+				</div>
+
+			</div>
+
+
+		<!-- Scripts -->
+
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
